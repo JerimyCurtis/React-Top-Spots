@@ -1,10 +1,12 @@
-/* Customizes the background and text color of the jumbotron */
+body {
+  background-color: rgb(110, 110, 242);
+}
 .jumbotron {
-  background-image: url(./img/2seal.png);
-  background-position:center;  
+  position: relative; /* Needed to position children absolutely relative to this container */
   background: linear-gradient(to bottom right, orange, yellow, rgb(87, 163, 229), cyan);
   color: #272624;
 }
+
 .jumbotron .background-images {
   display: flex;
 }
@@ -15,13 +17,25 @@
   background-position: center;
 }
 
+.jumbotron .seal {
+  position: absolute;
+  top: 15px;
+  right: 75px;
+  height: 200px; /* Adjust as needed */
+  width: 200px; /* Adjust as needed */
+  background-image: url(./img/2seal.png); /* Update the path to your seal image */
+  background-size:contain;
+  background-position: center;
+}
+
 /* Enhances the appearance of each top spot card */
 .well {
-  background-color: #fff;
+  background: linear-gradient(to bottom, orange, yellow, rgb(87, 163, 229), cyan);
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 15px;
   margin-bottom: 20px;
+  font: bolder;
 }
 
 /* Styles the 'View on Google Maps' button with Bootstrap primary color */
