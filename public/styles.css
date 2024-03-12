@@ -1,14 +1,43 @@
-html {
-  background-color: #f4f7f6; 
-  height: 100%;
-  box-sizing: border-box;
+/* Customizes the background and text color of the jumbotron */
+.jumbotron {
+  background-image: url(./img/2seal.png);
+  background-position:center;  
+  background: linear-gradient(to bottom right, orange, yellow, rgb(87, 163, 229), cyan);
+  color: #272624;
+}
+.jumbotron .background-images {
+  display: flex;
 }
 
+.jumbotron .background-images > div {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Enhances the appearance of each top spot card */
 .well {
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styles the 'View on Google Maps' button with Bootstrap primary color */
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #2e6da4;
+}
+
+/* Additional styling for the title and description text */
+.h4, p {
+  margin-bottom: 15px;
+}
+
+/* Ensures the content is centered and provides a nice padding around the content */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
