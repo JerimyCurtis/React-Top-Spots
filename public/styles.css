@@ -30,12 +30,16 @@ body {
 
 /* Enhances the appearance of each top spot card */
 .well {
-  background: linear-gradient(to bottom, orange, yellow, rgb(87, 163, 229), cyan);
-  border: 1px solid #ddd;
+  background: linear-gradient(to bottom, orange, rgb(87, 163, 229), cyan);
+  border: 1px solid #e4e00d;
   border-radius: 4px;
   padding: 15px;
   margin-bottom: 20px;
-  font: bolder;
+  color: #333; /* Darker text for better contrast */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold; /* Only if you want the text to be bold *
 }
 
 /* Styles the 'View on Google Maps' button with Bootstrap primary color */
