@@ -7,6 +7,12 @@ body {
   background-size: 350px 250px;
 }
 
+/* #map{
+  background-position-y:1380px;
+  background-position-x: left;
+  background-size: auto;
+} */
+
 .jumbotron {
   background: linear-gradient(to bottom right, orange, yellow, rgb(87, 163, 229), cyan);
   color: #272624; 
