@@ -1,61 +1,67 @@
 body {
   background-color: rgb(110, 110, 242);
+  background-image: url(./img/arch.jpg), url(./img/row.jpg), url(./img/bet.jpg), url(./img/zoo.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 300px, 570px,840px, 1110px ;
+  background-position-x: left;
+  background-size: 350px 250px;
 }
+
 .jumbotron {
-  position: relative; /* Needed to position children absolutely relative to this container */
   background: linear-gradient(to bottom right, orange, yellow, rgb(87, 163, 229), cyan);
-  color: #272624;
+  color: #272624; 
+  font-weight: bold;
+}
+#p1{
+  font-weight:900;
+  font-size:larger;
+}
+/* Layout adjustments */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  gap: 20px; 
+  padding: 20px;
 }
 
-.jumbotron .background-images {
-  display: flex;
+.header {
+  grid-column: 1 / 2;
 }
 
-.jumbotron .background-images > div {
-  flex-grow: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.jumbotron .seal {
-  position: absolute;
-  top: 15px;
-  right: 75px;
-  height: 200px; /* Adjust as needed */
-  width: 200px; /* Adjust as needed */
-  background-image: url(./img/2seal.png); /* Update the path to your seal image */
-  background-size:contain;
-  background-position: center;
+.card-grid {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive card grid */
+  gap: 20px; /* Adjust the gap between cards as necessary */
 }
 
 /* Enhances the appearance of each top spot card */
 .well {
-  background: linear-gradient(to bottom, orange, rgb(87, 163, 229), cyan);
-  border: 1px solid #e4e00d;
-  border-radius: 4px;
-  padding: 15px;
-  margin-bottom: 20px;
+  background:linear-gradient(to bottom right, orange, yellow, rgb(87, 163, 229), cyan);
+  border-radius: 4px; 
+  padding: 15px; 
+  margin-bottom: 20px; 
   color: #333; /* Darker text for better contrast */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold; /* Only if you want the text to be bold *
+  font-weight: bold; 
 }
 
 /* Styles the 'View on Google Maps' button with Bootstrap primary color */
 .btn-primary {
-  background-color: #337ab7;
+  background-color: #337ab7; 
   color: #fff;
-  border-color: #2e6da4;
+  border-color: #2e6da4; 
 }
 
 /* Additional styling for the title and description text */
 .h4, p {
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 /* Ensures the content is centered and provides a nice padding around the content */
 .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
 }
